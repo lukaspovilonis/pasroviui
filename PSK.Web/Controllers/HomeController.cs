@@ -1,4 +1,5 @@
-﻿using System.Data.SqlClient;
+﻿using System.Configuration;
+using System.Data.SqlClient;
 using System.Web.Mvc;
 
 namespace PSK.Web.Controllers
@@ -7,7 +8,8 @@ namespace PSK.Web.Controllers
     {
         public ActionResult Index()
         {
-            var connectionString = @"Data Source=(LocalDB)\mssqllocaldb;Integrated Security=false;AttachDbFileName=|DataDirectory|\Database.mdf";
+            string connectionString = ConfigurationManager.ConnectionStrings["localdb"].ConnectionString;
+
             SqlConnection connection = new SqlConnection(connectionString);
 
             connection.Open();
