@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PSK.Web", "PSK.Web\PSK.Web.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PSK.Web.Tests", "PSK.Web.Tests\PSK.Web.Tests.csproj", "{0C8E0915-1481-4A70-8340-DDF03F2A7304}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PSK.Model", "PSK.Model\PSK.Model.csproj", "{539FCBF9-2D70-4082-BDD0-2C208F72CB9F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PSK.NHibernate", "PSK.NHibernate\PSK.NHibernate.csproj", "{FF021B35-67DF-4ED5-8E5F-6A2E3C0F0CA0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{0C8E0915-1481-4A70-8340-DDF03F2A7304}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0C8E0915-1481-4A70-8340-DDF03F2A7304}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0C8E0915-1481-4A70-8340-DDF03F2A7304}.Release|Any CPU.Build.0 = Release|Any CPU
+		{539FCBF9-2D70-4082-BDD0-2C208F72CB9F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{539FCBF9-2D70-4082-BDD0-2C208F72CB9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{539FCBF9-2D70-4082-BDD0-2C208F72CB9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{539FCBF9-2D70-4082-BDD0-2C208F72CB9F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF021B35-67DF-4ED5-8E5F-6A2E3C0F0CA0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF021B35-67DF-4ED5-8E5F-6A2E3C0F0CA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF021B35-67DF-4ED5-8E5F-6A2E3C0F0CA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF021B35-67DF-4ED5-8E5F-6A2E3C0F0CA0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
