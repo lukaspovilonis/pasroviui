@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26430.4
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PSK.Web", "PSK.Web\PSK.Web.csproj", "{DB367F51-2826-45B7-A008-CB07A9FD80B1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PSK.Web1", "PSK.Web\PSK.Web1.csproj", "{DB367F51-2826-45B7-A008-CB07A9FD80B1}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PSK.Web.Tests", "PSK.Web.Tests\PSK.Web.Tests.csproj", "{0C8E0915-1481-4A70-8340-DDF03F2A7304}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PSK.Model", "PSK.Model\PSK.Model.csproj", "{539FCBF9-2D70-4082-BDD0-2C208F72CB9F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PSK.NHibernate", "PSK.NHibernate\PSK.NHibernate.csproj", "{FF021B35-67DF-4ED5-8E5F-6A2E3C0F0CA0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PSK.WebApp", "PSK.WebApp\PSK.WebApp.csproj", "{434837F7-40A0-4194-A560-9E654AFC986F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{FF021B35-67DF-4ED5-8E5F-6A2E3C0F0CA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FF021B35-67DF-4ED5-8E5F-6A2E3C0F0CA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FF021B35-67DF-4ED5-8E5F-6A2E3C0F0CA0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{434837F7-40A0-4194-A560-9E654AFC986F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{434837F7-40A0-4194-A560-9E654AFC986F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{434837F7-40A0-4194-A560-9E654AFC986F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{434837F7-40A0-4194-A560-9E654AFC986F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

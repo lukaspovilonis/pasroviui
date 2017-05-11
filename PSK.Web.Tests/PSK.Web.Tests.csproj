@@ -91,9 +91,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\PSK.Web\PSK.Web.csproj">
+    <ProjectReference Include="..\PSK.Web\PSK.Web1.csproj">
       <Project>{DB367F51-2826-45B7-A008-CB07A9FD80B1}</Project>
-      <Name>PSK.Web</Name>
+      <Name>PSK.Web1</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
