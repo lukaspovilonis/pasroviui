@@ -13,6 +13,11 @@ namespace PSK.WebApp
 		{
 			routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
+			//routes.MapRoute(
+			//	"Area",
+			//	"",
+			//	new { area = "Public", controller = "Home", action = "Index" }
+			//);
 			routes.MapRoute(
 				name: "Default",
 				url: "{controller}/{action}/{id}",

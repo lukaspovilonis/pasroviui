@@ -5,6 +5,7 @@ using System.Web.Mvc;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
+using PSK.Infrastructure.Owin;
 using PSK.WebApp.Models;
 
 namespace PSK.WebApp.Areas.Public.Controllers
