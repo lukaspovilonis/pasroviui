@@ -1,38 +1,48 @@
-﻿using System.Configuration;
-using System.Data.SqlClient;
+﻿using System;
+using System.Configuration;
+using System.Linq;
 using System.Web.Mvc;
+using NHibernate.Util;
+using PSK.Model;
+using PSK.NHibernate;
 
 namespace PSK.Web.Controllers
 {
-    public class HomeController : Controller
-    {
-        public ActionResult Index()
-        {
-            string connectionString = ConfigurationManager.ConnectionStrings["localdb"].ConnectionString;
+	public class HomeController : Controller
+	{
+		private IRepository _repository;
 
-            SqlConnection connection = new SqlConnection(connectionString);
 
-            connection.Open();
+		public HomeController(IRepository repository)
+		{
+			_repository = repository;
+		}
 
-           //do some stuff with db :>
+		public ActionResult Index()
+		{
+			return View();
+		}
 
-            connection.Close();
+		public ActionResult Test()
+		{
+			var dummy = new Dummy();
+			_repository.SaveOrUpdate(dummy);
+			var meow = _repository.GetAll<Dummy>();
+			return Json(meow.First().Id, JsonRequestBehavior.AllowGet);
+		}
 
-            return View();
-        }
+		public ActionResult About()
+		{
+			ViewBag.Message = "Your application description page.";
 
-        public ActionResult About()
-        {
-            ViewBag.Message = "Your application description page.";
+			return View();
+		}
 
-            return View();
-        }
+		public ActionResult Contact()
+		{
+			ViewBag.Message = "Your contact page.";
 
-        public ActionResult Contact()
-        {
-            ViewBag.Message = "Your contact page.";
-
-            return View();
-        }
-    }
+			return View();
+		}
+	}
 }
