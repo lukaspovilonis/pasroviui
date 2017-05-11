@@ -12,8 +12,7 @@ namespace PSK.WebApp
 	{
 		protected void Application_Start()
 		{
-			AutofacConfig.ConfigureContainer();
-
+			//AutofacConfig.ConfigureContainer();
 			AreaRegistration.RegisterAllAreas();
 			FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
 			RouteConfig.RegisterRoutes(RouteTable.Routes);

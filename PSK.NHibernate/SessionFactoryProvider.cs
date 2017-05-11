@@ -10,6 +10,7 @@ using FluentNHibernate.Mapping;
 using NHibernate;
 using NHibernate.Tool.hbm2ddl;
 using PSK.Model;
+using NHibernate.AspNet.Identity.Helpers;
 
 namespace PSK.NHibernate
 {
@@ -18,14 +19,21 @@ namespace PSK.NHibernate
 		private static ISessionFactory _sessionFactory;
 		private static readonly object _padlock = 1;
 
+
+
 		public static void CreateSessionFactory()
 		{
 			lock (_padlock)
 			{
+				var myEntities = new[] {
+					typeof(ApplicationUser)
+				};
+
 				var connectionString = ConfigurationManager.ConnectionStrings["localdb"].ConnectionString;
 				var configuration = Fluently.Configure()
 					.Database(MsSqlConfiguration.MsSql2012.ConnectionString(connectionString).ShowSql)
 					.Mappings(m => m.FluentMappings.AddFromNamespaceOf<DummyMappings>())
+					.ExposeConfiguration(c => c.AddDeserializedMapping(MappingHelper.GetIdentityMappings(myEntities), null))
 					.BuildConfiguration();
 #if DEBUG
 				var exporter = new SchemaExport(configuration);

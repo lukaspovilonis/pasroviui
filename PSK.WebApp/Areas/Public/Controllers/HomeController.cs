@@ -1,12 +1,9 @@
-﻿using System;
-using System.Configuration;
-using System.Linq;
+﻿using System.Linq;
 using System.Web.Mvc;
-using NHibernate.Util;
 using PSK.Model;
 using PSK.NHibernate;
 
-namespace PSK.Web.Controllers
+namespace PSK.WebApp.Areas.Public.Controllers
 {
 	public class HomeController : Controller
 	{
