@@ -7,9 +7,11 @@ using Microsoft.AspNet.Identity;
 using Microsoft.Owin.Security;
 using Microsoft.Owin.Security.DataProtection;
 using NHibernate;
+using NHibernate.AspNet.Identity;
 using Owin;
-using PSK.Infrastructure.Owin;
+using PSK.Infrastructure.Identity;
 using PSK.Model;
+using PSK.Model.Identity;
 using PSK.NHibernate;
 
 namespace PSK.WebApp
@@ -36,6 +38,8 @@ namespace PSK.WebApp
 			builder.RegisterSource(new ViewRegistrationSource());
 			builder.RegisterType<ApplicationUserStore>().As<IUserStore<ApplicationUser>>().InstancePerRequest();
 			builder.RegisterType<ApplicationUserManager>().AsSelf().InstancePerRequest();
+			builder.RegisterType<ApplicationRoleStore>().As<IRoleStore<IdentityRole>>().InstancePerRequest();
+			builder.RegisterType<ApplicationRoleManager>().AsSelf().InstancePerRequest();
 			builder.RegisterType<ApplicationSignInManager>().AsSelf().InstancePerRequest();
 			builder.Register<IAuthenticationManager>(c => HttpContext.Current.GetOwinContext().Authentication)
 				.InstancePerRequest();

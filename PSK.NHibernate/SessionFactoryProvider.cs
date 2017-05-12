@@ -11,6 +11,7 @@ using NHibernate;
 using NHibernate.Tool.hbm2ddl;
 using PSK.Model;
 using NHibernate.AspNet.Identity.Helpers;
+using PSK.Model.Identity;
 
 namespace PSK.NHibernate
 {

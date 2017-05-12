@@ -2,9 +2,9 @@
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security.DataProtection;
-using PSK.Model;
+using PSK.Model.Identity;
 
-namespace PSK.Infrastructure.Owin
+namespace PSK.Infrastructure.Identity
 {
 	public class ApplicationUserManager : UserManager<ApplicationUser>
 	{

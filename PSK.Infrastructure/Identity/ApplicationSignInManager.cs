@@ -3,9 +3,9 @@ using System.Threading.Tasks;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin;
 using Microsoft.Owin.Security;
-using PSK.Model;
+using PSK.Model.Identity;
 
-namespace PSK.Infrastructure.Owin
+namespace PSK.Infrastructure.Identity
 {
 	// Configure the application user manager used in this application. UserManager is defined in ASP.NET Identity and is used by the application.
 

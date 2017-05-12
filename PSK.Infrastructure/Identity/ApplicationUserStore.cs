@@ -1,8 +1,8 @@
 ﻿using NHibernate;
 using NHibernate.AspNet.Identity;
-using PSK.Model;
+using PSK.Model.Identity;
 
-namespace PSK.Infrastructure.Owin
+namespace PSK.Infrastructure.Identity
 {
 	public class ApplicationUserStore : UserStore<ApplicationUser>
 	{

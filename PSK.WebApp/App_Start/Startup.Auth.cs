@@ -5,8 +5,9 @@ using Microsoft.Owin;
 using Microsoft.Owin.Security.Cookies;
 using Microsoft.Owin.Security.Google;
 using Owin;
-using PSK.Infrastructure.Owin;
+using PSK.Infrastructure.Identity;
 using PSK.Model;
+using PSK.Model.Identity;
 using PSK.NHibernate;
 using PSK.WebApp.Models;
 

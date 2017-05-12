@@ -19,7 +19,6 @@ namespace PSK.WebApp.Areas.Public.Controllers
 		{
 			return View();
 		}
-
 		public ActionResult Test()
 		{
 			var dummy = new Dummy();
@@ -27,14 +26,13 @@ namespace PSK.WebApp.Areas.Public.Controllers
 			var meow = _repository.GetAll<Dummy>();
 			return Json(meow.First().Id, JsonRequestBehavior.AllowGet);
 		}
-
 		public ActionResult About()
 		{
 			ViewBag.Message = "Your application description page.";
 
 			return View();
 		}
-
+		[Authorize(Roles = "Admin")]
 		public ActionResult Contact()
 		{
 			ViewBag.Message = "Your contact page.";
